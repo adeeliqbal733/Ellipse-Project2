@@ -11,6 +11,7 @@ body {
 
 header {
     height: 15vh;
+    width: 100%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -225,818 +226,111 @@ padding: 3px;
     border-radius: 8px
 }
 
-/* Media Query */
-@media screen and (min-width: 1350px) {
-   .info-box {
-    height: 66vh;
-    width: 43vw;
-   }
-   .head p {
-    font-size: 43px;
-   }
-   .para {
-    margin-top: 17px;
-   }
-   .para p {
-    font-size: 14px;
-   }
-   .price {
-    font-size: 41px;
-   }
-   
-    
+/* Burger dropdown*/
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 26%;
+top: 73px;
+}
+.line{
+    width: 33px;
+     background-color: white;
+     height: 4px;
+     margin: 5px 2px;
+}
+.burger:checked header {
+    height: 30vh;
 }
 
-/* width 1153px */
-@media screen and (max-width: 1153px) {
+
+/* Media Query */
+
+/* width 1140px */
+@media only screen and (max-width: 1140px) {
+    header {
+        width: 65%;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar{
+        height: 53px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    nav ul li {
+            padding: 12px;
+    }
     .left-img img {
-        width: 45vw;
+        width: 35vw;
     }
     .arrow-left {
-        left: 455px;
-    top: 674px;
+        left: 327px;
+    top: 550px;
     }
     .arrow-right {
-        left: 520px;
-    top: 675px;
+        left: 398px;
+        top: 550px;
     }
     .box {
-        margin-left: 165px;
+        margin-left: 49px;
     }
     .info-box {
-        height: 58vh;
-        width: 40vw;
+        height: 39vh;
+        width: 29vw;
+    }
+    .content span {
+        font-size: 16px;
     }
     .head p {
-        font-size: 40px;
+        font-size: 28px;
         margin-top: 9px;
         }
     .para {
         padding-top: 13px;
     }
     .para p {
-        font-size: 14px;
-    }
-    .price {
-        font-size: 40px;
-    }
-    .star {
-        padding: 1px;
-    }
-    .btn-cart button {
-        width: 167px;
-    }
-    .add-wish {
-        margin-top: 42px;
-        font-size: 13px;
-    }
-    .angles img {
-        padding-right: 11px;
-        width: 86px;
-        height: 54px;
-    }
-}
-/* width: 1110px */
-@media screen and (max-width: 1110px) {
-    header {
-        margin: 47px;
-    }
-    .nav-logo img {
-        padding: 0 6px;
-    }
-    .nav-logo p {
-        font-size: 27px;
-    }
-    nav {
-        margin-right: 69px;
-        }
-        nav ul li {
-            padding: 15px;
-        }
-        nav ul li a {
-            font-size: 0.95rem;
-        }
-        
-        .left-img {
-            margin: 0 0 0 33px;
-        }
-    .left-img img {
-        width: 41vw;
-    }
-    .arrow-left {
-        left: 331px;
-    top: 631px;
-    }
-    .arrow-right {
-        left: 390px;
-        top: 632px;
-    }
-    .box {
-        margin-left: 121px;
-        }
-    .info-box {
-        height: 53vh;
-        width: 32vw;
-    }
-    .content span {
-        font-size: 13px;
-    }
-    .head p {
-        font-size: 27px;
-    margin-top: 13px;
-    }
-    .para p {
-        font-size: 11px;
-    }
-    .price {
-        font-size: 32px;
-    }
-    .stars p {
-        font-size: 11px;
-    }
-    .btn-cart button {
-        width: 150px;
-    }
-    .btn-buy {
-        margin-top: 11px;
-    }
-    .btn-buy button i {
-        padding-right: 7px;
-        font-size: 18px;
-    }
-    .add-wish {
-        margin-top: 7px;
-    font-size: 11px;
-    }
-    .angles img {
-        width: 77px;
-    height: 54px;
-    }
-}
-
-/* width: 964px */
-@media screen and (max-width: 964px) {
-    .left-img {
-        margin: 0 0 0 49px;
-    }
-    .left-img img {
-        width: 38vw;
-    }
-    .arrow-left {
-        left: 289px;
-    top: 526px;
-    }
-    .arrow-right {
-        left: 344px;
-        top: 528px;
-    }
-    .box {
-        margin-left: 92px; 
-    height: 48vw;
-    }
-    .info-box {
-        height: 49vh;
-    width: 29vw;
-    }
-    .content span {   
-    font-size: 11px;
-    }
-    .head p {
-        font-size: 20px;
-    }
-    .para p {
-        font-size: 10px;
-    }
-    .price {
-            font-size: 32px;
-}
-.stars p {
-    font-size: 10px;
-}
-.btn-cart button {
-    width: 140px;
-}
-.add-wish {
-    margin-top: 0px;
-    font-size: 10px;
-}
-.angles {
-    margin-top: 38px;
-}
-.angles img {
-    width: 74px;
-    height: 65px;
-}
-}
-
-/* width 957px */
-@media screen and (max-width: 957px) {
-    .left-img img {
-        width: 46vw;
-    }
-    .arrow-left {
-        left: 331px;
-        top: 613px;
-    }
-    .arrow-right {
-        left: 395px;
-        top: 612px;
-    }
-    .box {
-        margin-left: 136px;
-    }
-    .info-box {
-        height: 51vh;
-    width: 34vw;
-    }
-    .head p {   
-    font-size: 25px;
+        font-size: 12px;
     }
     .price {
         font-size: 31px;
     }
-    .btn-cart button {
-        width: 144px;
-    }
-}
-
-/* width:770px */
-@media screen and (max-width:770px) {
-    .header {
-        margin: 22px;
-    }
-    .nav-logo p {
-        font-size: 24px;
-    }
-    nav {
-        margin-right: 7px;
-    }
-    nav ul li {
-        padding: 13px;
-    }
-    .container {
-        display: inline-block;
-    }
-    .box {
-        margin-left: 138px;
-        margin-top: 70px;
-        }
-        .info-box {
-            height: 31vh;
-            width: 60vw;
-        }
-    .left-img {
-        margin: 0 0 0 130px;
-        }
-    .left-img img {
-    width: 61vw;
-    }
-    .content span {
-        font-size: 12px;
-    }
-    .head p {
-        font-size: 28px;
-    }
-    .para p {
-        font-size: 12px;
-    }
-    .price {
-        padding: 18px 0px 0px 0;
-    font-size: 35px;
-    }
     .star {
-        padding: 0px;
+        padding: 1px;
     }
-    .stars p {
-        font-size: 12px;
-    }
-    
-    .arrow-left {
-        left: 421px;
-        top: 684px;
-    }
-    .arrow-right {
-        left: 493px;
-        top: 685px;
+    .btn-cart {
+        display: flex;
+        margin-top: 15px;
     }
     .btn-cart button {
-        width: 123px;
-        height: 28px;
-        font-size: 0.60rem;
-        padding-top: 11px;
+        width: 111px;
     }
-    .btn-buy button i {
-    font-size: 11px;
+    .btn-cart .btn-buy {
+        margin-top: 0;
+        margin-left: 38px;
     }
     .add-wish {
-        margin-top: 2px;
-        font-size: 10px;
+        margin-top: 29px;
+        font-size: 13px;
     }
     .angles {
-        margin-top: 41px;
+        margin-top: 27px;
     }
     .angles img {
-        width: 90px;
-        height: 65px;
-    padding-right: 15px;
+        padding-right: 11px;
+        width: 72px;
+        height: 54px;
     }
-}
-
-/* width 620px */
-@media screen and (max-width: 620px) {
-    header {
-        margin: 18px;
-    }
-.nav-logo p {
-    font-size: 25px;
-}
-nav {
-    margin-right: 4px;
-}
-nav ul li {
-    padding: 10px;
-}
-nav ul li a {
-    font-size: 0.85rem;
-}
-.left-img {
-    margin: 0 0 0 20px;
-}
-.left-img img {
-    width: 53vw;
-}
-.arrow-left {
-    left: 237px;
-    top: 437px;
-}
-.arrow-right {
-    left: 291px;
-    top: 439px;
-}
-.box {
-    margin-left: 131px;
-}
-.info-box {
-    margin-top: -7px;
-}
-.content span {
-    font-size: 10px;
-}
-.head p {
-    font-size: 18px;
-}
-.para p {
-    font-size: 9px;
-}
-.price {
-    font-size: 25px;
-}
-.star img {
-    width: 0.65rem;
-}
-.stars p {
-    font-size: 8px;
-    padding-top: 9px;
-}
-.btn-cart {
-    display: flex;
-    margin-top: 9px;
-}
-.btn-cart button {
-    height: 35px;
-    width: 83px;
-    font-size: 0.6rem;
-    padding-top: 9px;
-}
-.btn-buy {
-    margin-top: 0;
-    position: absolute;
-    left: 467px;
-
-}
-.btn-buy button i {
-    font-size: 13px;
-}
-.add-wish {
-    margin-top: -68px;
-    font-size: 10px;
-}
-.angles {
-    margin-top: 25px;
-}
-.angles img {
-    width: 50px;
-    height: 46px;
-}
-
-}
-
-/*  width 574px */
-@media screen and (max-width: 574px) {
-    .arrow-left {
-        left: 215px;
-        top: 413px;
-    }
-    .arrow-right {
-        left: 265px;
-    top: 416px;
-    }
-    .box {
-        margin-left: 116px;
-    }
-    .info-box {
-        height: 51vh;
-        width: 36vw;    
-    }
-    .btn-buy {
-        left: 449px;
-    }
-    .angles {
-    margin-top: 5px;
-    }
-    .angles img {
-        width: 50px;
-    height: 41px;
-    }
-}
-
-/* Width 500px */
-@media screen and (max-width: 500px) {
-    .container {
-        display: inline-block;
-    }
-    .left-img {
-        margin: 0 93px;
-    }
-    .left-img img { 
-    width: 65vw;
-    }
-    .arrow-left {
-        left: 278px;
-        top: 433px;
-    }
-    .arrow-right {
-        left: 343px;
-    top: 432px;
-    }
-    .box {
-        margin-left: 97px;
-    }
-    .info-box {
-        margin-top: 34px;
-        height: 53vh;
-        width: 64vw;
-    }
-    .content span {
-        font-size: 11px;
-    }
-    .head p {
-        font-size: 22px;
-    }
-    .para p {
-        font-size: 10px;
-    }
-    .price {
-    font-size: 28px;
-    }
-  .btn-cart button {
-    width: 111px;
-  }
-    .btn-buy {
-        left: 244px;
-    }
-  .add-wish {
-    font-size: 11px;
-  }
-  .angles {
-    margin-top: 41px;
-  }
-  .angles img {
-    width: 69px;
-    height: 51px;
-  }
-}
-
-/* width: 442px */
-@media screen and (max-width: 442px) {
-    nav {
-        margin-right: -81px;
-    }
-    .container {
-        display: inline-block;
-    }
-    .left-img {
-        margin: 0 0 0 83px;
-    }
-    .left-img img {
-        width: 72vw;
-    }
-    .arrow-left {
-    left: 281px;
-    top: 418px;
-    }
-    .arrow-right {
-        left: 336px;
-        top: 419px;
-    }
-    .box {
-        margin-left: 87px;
-    }
-    .info-box {
-    margin-top: 31px;
-    height: 52vh;
-    width: 70vw;
-    }
-    .content span {
-        font-size: 11px;
-    }
-    .head p {
-        font-size: 21px;
-    }
-    .para p {
-        font-size: 11px;
-    }
-    .price {
-    font-size: 31px;
-    }
-    .btn-cart button {
-        width: 105px;
-        padding-top: 12px;
-    }
-    .btn-buy {
-        left: 250px;
-    }
-    .add-wish {
-        margin-top: -31px;
-        font-size: 11px;
-    }
-    .angles {
-        margin-top: 50px;
-    }
-    .angles img {
-        width: 68px;
-        height: 55px;
-    }
-}
-
-/* width: 428px */
-@media screen and (max-width: 428px) {
-    nav {
-        margin-right: -81px;
-    }
-    .container {
-        display: inline-block;
-    }
-    .left-img {
-        margin: 0 0 0 83px;
-    }
-    .left-img img {
-        width: 72vw;
-    }
-    .arrow-left {
-    left: 281px;
-    top: 418px;
-    }
-    .arrow-right {
-        left: 336px;
-        top: 419px;
-    }
-    .box {
-        margin-left: 87px;
-    }
-    .info-box {
-    margin-top: 31px;
-    height: 52vh;
-    width: 70vw;
-    }
-    .content span {
-        font-size: 11px;
-    }
-    .head p {
-        font-size: 21px;
-    }
-    .para p {
-        font-size: 11px;
-    }
-    .price {
-    font-size: 31px;
-    }
-    .btn-cart button {
-        width: 105px;
-        padding-top: 12px;
-    }
-    .btn-buy {
-        left: 250px;
-    }
-    .add-wish {
-        margin-top: -31px;
-        font-size: 11px;
-    }
-    .angles {
-        margin-top: 50px;
-    }
-    .angles img {
-        width: 68px;
-        height: 55px;
-    }
-}
-
-
-/* width: 398px */
-@media screen and (max-width: 398px) {
-    nav {
-        margin-right: -81px;
-    }
-    .container {
-        display: inline-block;
-    }
-    .left-img {
-        margin: 0 0 0 83px;
-    }
-    .left-img img {
-        width: 72vw;
-    }
-    .arrow-left {
-        left: 243px;
-        top: 390px;
-    }
-    .arrow-right {
-        left: 306px;
-    top: 388px;
-    }
-    .box {
-        margin-left: 87px;
-    }
-    .info-box {
-    margin-top: 31px;
-    height: 52vh;
-    width: 70vw;
-    }
-    .content span {
-        font-size: 11px;
-    }
-    .head p {
-        font-size: 21px;
-    }
-    .para p {
-        font-size: 11px;
-    }
-    .price {
-    font-size: 31px;
-    }
-    .btn-cart button {
-        width: 105px;
-        padding-top: 12px;
-    }
-    .btn-buy {
-        left: 250px;
-    }
-    .add-wish {
-        margin-top: -31px;
-        font-size: 11px;
-    }
-    .angles {
-        margin-top: 50px;
-    }
-    .angles img {
-        width: 68px;
-        height: 55px;
-    }
-}
-
-/* width: 361px */
-@media screen and (max-width: 361px) {
-    .nav-logo p {
-        font-size: 21px;
-    }
-    nav {
-        margin-right: -54px;
-    }
-    nav ul li {
-        padding: 6px;
-    }
-    .left-img {
-        margin: 0 0 0 65px;
-    }
-    .arrow-left {
-        left: 207px;
-        top: 360px;
-    }
-    .arrow-right {
-        left: 267px;
-        top: 362px;
-    }
-    .box {
-        margin-left: 68px;
-    }
-    .btn-buy { 
-    left: 207px;
-    }
-}
-
-/* width: 334px */
-@media screen and (max-width: 334px) {
-    header {
-        margin: -2px 57px 11px 4px;
-    }
-    .nav-logo p {
-        font-size: 18px;
-    }
-    nav ul li a {
-        font-size: 0.65rem;
-    }
-    .left-img {
-        margin: 0 0 0 42px;
-    }
-    .arrow-left {
-        left: 178px;
-    top: 312px;
-    }
-    .arrow-right {
-        left: 231px;
-        top: 313px;
-    }
-    .box {
-        margin-left: 45px;
-    }
-    .info-box {
-        height: 55vh;
-    width: 73vw;
-    }
-    .head p {
-        font-size: 19px;
-    }
-    .para p {
-        font-size: 10px;
-    }
-    .price {  
-    font-size: 28px;
-    }
-   .btn-cart button {
-    width: 87px;
-   }
-   .btn-buy {
-    left: 186px;
-   }
-   
-}
-
-/* width: 280px */
-@media screen and (max-width: 280px) {
-    .nav-logo img {
-        width: 15vw;
-    }
-    .nav-logo p {   
-    font-size: 14px;
-    }
-    nav ul li {
-        padding: 3px;
-    }
-    .left-img {
-        margin: 0 0 0 35px;
-    }
-    .arrow-left {
-        left: 160px;
-        top: 282px;
-    width: 27px;
-    }
-    .arrow-left i {
-        padding: 7px;
-        font-size: 0.9rem;
-        }
-    .arrow-right {
-        left: 201px;
-    top: 284px;
-        width: 27px;
-    }
-    .arrow-right i{
-        padding: 7px;
-        font-size: 0.9rem;
-        }
-        .box {
-            margin-left: 36px;
-        }
-        .info-box {     
-          height: 47vh;
-        }
-        .content span {
-            font-size: 9px;
-        }
-        .head p {
-         font-size: 15px;
-        }
-        .para p {
-            font-size: 8px;
-        }
-        .price {
-            font-size: 23px;
-        }
-        .btn-buy {
-            left: 153px;
-        }
-        .angles img {
-            width: 51px;
-            height: 43px;
-            padding-right: 2px;
-        }
 }
